@@ -1,0 +1,17 @@
+{
+  "name": "org.wso2.iot.mac",
+  "version": "1.0.0",
+  "nickName": "mac",
+  "description": "Data received from the mac",
+  "metaData": [
+    {"name":"owner","type":"STRING"},
+    {"name":"deviceId","type":"STRING"},
+    {"name":"time","type":"LONG"}
+  ],
+  "payloadData": [
+    {"name": "macbatterylevel","type": "FLOAT"},
+    {"name": "macbatterystatus", "type": "FLOAT"},
+    {"name": "maccpuusage", "type": "FLOAT"}
+  ]
+}
+
