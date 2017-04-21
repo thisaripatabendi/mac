@@ -220,7 +220,8 @@ public class DeviceTypeServiceImpl implements DeviceTypeService {
         String from_date = fromDate + "000";
         String to_date = toDate + "000";
         String query = "meta_deviceId:" + deviceId + " AND meta_deviceType:" +
-                DeviceTypeConstants.DEVICE_TYPE + " AND meta_time : [" + from_date + " TO " + to_date + "]";String sensorTableName = null;
+                DeviceTypeConstants.DEVICE_TYPE + " AND meta_time : [" + from_date + " TO " + to_date + "]";
+        String sensorTableName = null;
         if(sensorType.equals(DeviceTypeConstants.SENSOR_TYPE1)){
             sensorTableName = DeviceTypeConstants.SENSOR_TYPE1_EVENT_TABLE;
         }else if(sensorType.equals(DeviceTypeConstants.SENSOR_TYPE2)){
